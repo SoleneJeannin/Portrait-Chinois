@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Mon portrait chinois</title>
+    <script src="https://kit.fontawesome.com/663b30288f.js" crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="enTete">Mon portrait chinois</h1>
+        <button id="boutonOuvreFormulaire" onclick="openFormulaire()"> Je crée mon thème </button>
+    </header>
+    <main id="portrait">
+        <form onsubmit="envoi(event)" id="popup">
+            <div id="fermeFormulaire" onclick="closeFormulaire()"><i id="croix" class="fa-solid fa-circle-xmark"></i></div>
+            <h1>Créez votre propre thème</h1>
+            <p>Attention, tous les champs sont obligatoires.</p>
+            <p class="identiteVisiteur">
+                <label for="nom">Nom</label>
+                <input required id="nom" type="text"> <br>
+                <label for="prenom">Prénom</label>
+                <input required id="prenom" type="text"><br>
+                <label for="monmail">E-mail</label>
+                <input required id="monmail" type="email">
+                <br>
+            </p>
+            <p class="infoPortrait">
+            <p>Entrez les informations de votre thème : </p>
+            <label for="analogie">Si j'étais </label>
+            <input required type="text" id="analogie" name="analogie"> <br>
+            <label for="valeurAnalogie">Je serais </label>
+            <input required type="text" id="valeurAnalogie" name="valeurAnalogie"> <br>
+            <label for="explication">Parce que </label>
+            <input required id="explication" type="text"> <br>
+            <input type="submit" value="Me suggérer le thème" id="envoiFormulaire">
+
+            </p>
+
+        </form>
+        <div id="messageEnvoye"></div>
+    </main>
+    <footer>
+        <h3>Crédit</h1>
+            <div class="mesCredits">
+                <div class="monCredit">
+                    <h4>Développeuse : </h4><a target="_blank" href="https://www.linkedin.com/in/sol%C3%A8ne-jeannin-0443b2254/"> Soléne JEANNIN</a>
+                </div>
+                <div class="monCredit">
+                    <h4>Colorimétrie : </h4><a target="_blank" href="https://www.palettedecouleur.net/"> PaletteDeCouleur</a>
+                </div>
+                <div class="monCredit">
+                    <h4>Background SVG : </h4><a target="_blank" href="https://app.haikei.app/"> Haikei</a>
+                </div>
+                <div class="monCredit">
+                    <h4>Icons : </h4><a target="_blank" href="https://fontawesome.com/"> Font Awesome</a>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>
